@@ -31,4 +31,5 @@ def triangle(xy, fill=1, depth=5):
 
 triangle((0,0)+size, depth=10)
 im.show()
+im.save("output.png","PNG")
 
