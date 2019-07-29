@@ -2,7 +2,7 @@
 
 from PIL import Image
 
-size = (500,433) # the size of the final image
+size = (512,443) # the size of the final image
 im = Image.new("1",size,0) # create a new black and white image
 px = im.load() # create a pixel access object
 
@@ -32,7 +32,7 @@ def triangle(xy, fill=1, depth=5):
               fill,
               depth-1)
 
-triangle((0,0)+size, depth=10) # draw the triangle (smaller depths results in a dotty output)
+triangle((0,0,size[0]-1,size[1]-1), depth=10) # draw the triangle (smaller depths results in a dotty output)
 im.save("output.png","PNG") # save the image
 im.show() # open the image
 
