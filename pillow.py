@@ -9,6 +9,7 @@ im = Image.new(
 )
 px = im.load()  # create a pixel access object
 
+
 # takes a 4-tuple range of where to draw the sierpinski triangle
 def triangle(xy, fill=1, depth=5):
     # if recursion is over, fill the top left pixel
