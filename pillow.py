@@ -6,7 +6,7 @@ size = (512, 443)  # the size of the final image
 # create a new black and white image
 im = Image.new(
     "1", size, 0
-)  
+)
 px = im.load()  # create a pixel access object
 
 # takes a 4-tuple range of where to draw the sierpinski triangle
